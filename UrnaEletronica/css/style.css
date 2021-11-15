@@ -1,0 +1,176 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 110px;
+}
+
+.urna {
+    background-color: #dbd5c9;
+    padding: 30px;
+    display: flex;
+}
+
+.tela {
+    width: 500px;
+    height: 320px;
+    background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    border: 2px solid #555;
+    display: flex;
+    flex-direction: column;
+}
+
+.teclado {
+    margin-left: 30px;
+    background-color: #403A3A;
+}
+
+.teclado_linha {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.teclado_btn {
+    width: 70px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 #555;
+}
+
+.branco_btn {
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+}
+
+.corrige_btn {
+    background-color: #F09046;
+    color: #000;
+    font-size: 15px;
+}
+
+.confirma_btn {
+    background-color: #48C079;
+    color: #000;
+    font-size: 15px;
+    width: 90px;
+    height: 50px;
+}
+
+.div-1 {
+    flex: 1;
+    display: flex;
+}
+
+.div-1 .d-1-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.d-1-left .d-1-1 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.d-1-left .d-1-2 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-1-left .d-1-3 {
+    height: 50px;
+}
+
+.d-1-3 .numero {
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+}
+.pisca{
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.d-1-left .d-1-4{
+    flex: 1;
+    line-height: 30px;
+}
+
+.div-1 .d-1-right {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.div-1 .d-1-image {
+    border: 1px solid #000;
+    background-color: #FFF;
+    text-align: center;
+}
+
+.smallimg {
+    width: 90%;
+    font-size: 10px;
+}
+
+.div-2 {
+    height: 50px;
+    font-size: 14px;
+    border-top: 2px solid #000;
+    padding-left: 10px;
+}
+
+.voto_nulo {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.aviso_grande{
+    font-size: 70px;
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes pisca {
+    0% { opacity: 0.2;}
+    50% { opacity: 1;}
+    100% { opacity: 0.2;}
+}

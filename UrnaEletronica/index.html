@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- METAS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Insert the description for your website">
+    <meta name="author" content="Abner Santos">
+    <meta name="keywords" content="Insert keywords for your website">
+    <meta http-equiv="refresh" content="180">
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome, gives you 1,608 free icons -->
+    <script src="https://kit.fontawesome.com/721ec727b2.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- Main.js -->
+    <script src="etapas.js" defer></script>
+    <script src="javascript/main.js" defer></script>
+    <title>Urna Eletrônica</title>
+</head>
+
+<body>
+    <main class="urna">
+        <section class="tela">
+            <div class="div-1">
+                <div class="d-1-left">
+                    <div class="d-1-1">
+                        <span>SEU VOTO PARA</span>
+                    </div>
+                    <div class="d-1-2">
+                        <span>VEREADOR</span>
+                    </div>
+                    <div class="d-1-3">
+                        <div class="numero pisca"></div>
+                        <div class="numero"></div>
+                    </div>
+                    <div class="d-1-4">
+                        Nome: ...<br>
+                        Partido: ...<br>
+                        Vice-Prefeito: ...<br>
+                    </div>
+                </div>
+                <div class="d-1-right">
+                    <div class="d-1-image">
+                        <img src="images/splash_alice.jpg" alt="Alice">
+                        PREFEITO
+                    </div>
+                    <div class="d-1-image smallimg">
+                        <img src="images/splash_leomord.jpg" alt="Leo">
+                        VICE-PREFEITO
+                    </div>
+                </div>
+            </div>
+            <div class="div-2">
+                Aperte a tecla:<br>
+                CONFIRMA para CONFIRMAR este voto<br>
+                CORRIGE para REINICIAR este voto.
+            </div>
+        </section>
+        <section class="teclado">
+            <div class="teclado_linha">
+                <div class="teclado_btn" onclick="clicou('1')">1</div>
+                <div class="teclado_btn" onclick="clicou('2')">2</div>
+                <div class="teclado_btn" onclick="clicou('3')">3</div>
+            </div>
+            <div class="teclado_linha">
+                <div class="teclado_btn" onclick="clicou('4')">4</div>
+                <div class="teclado_btn" onclick="clicou('5')">5</div>
+                <div class="teclado_btn" onclick="clicou('6')">6</div>
+            </div>
+            <div class="teclado_linha">
+                <div class="teclado_btn" onclick="clicou('7')">7</div>
+                <div class="teclado_btn" onclick="clicou('8')">8</div>
+                <div class="teclado_btn" onclick="clicou('9')">9</div>
+            </div>
+            <div class="teclado_linha">
+                <div class="teclado_btn" onclick="clicou('0')">0</div>
+            </div>
+            <div class="teclado_linha">
+                <div class="teclado_btn branco_btn" onclick="branco()">BRANCO</div>
+                <div class="teclado_btn corrige_btn" onclick="corrige()">CORRIGE</div>
+                <div class="teclado_btn confirma_btn" onclick="confirma()">CONFIRMA</div>
+            </div>
+        </section>
+    </main>
+        <audio id="confirma_audio" src="images/Som-de-Urna-Eletrônica.ogg"></audio>
+</body>
+
+</html>
