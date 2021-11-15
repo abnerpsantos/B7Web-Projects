@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- METAS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Insert the description for your website">
+    <meta name="author" content="Abner Santos">
+    <meta name="keywords" content="Insert keywords for your website">
+    <meta http-equiv="refresh" content="180">
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome, gives you 1,608 free icons -->
+    <script src="https://kit.fontawesome.com/721ec727b2.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- Main.js -->
+    <script src="javascript/main.js" defer></script>
+    <title>Titulo</title>
+</head>
+
+<body>
+    <div class="screen">
+        <div class="left-side">
+            <img src="images/formSVG_undraw.svg" alt="">
+        </div>
+        <div class="right-side">
+            <h1>Crie uma conta</h1>
+            <form method="POST" action="" class="validator">
+                <label for="">Seu nome:<br>
+                    <input type="text" name="name" data-rules="required|min=2">
+                </label>
+                <label for="">Seu E-mail:<br>
+                    <input type="text" name="email" data-rules="required">
+                </label>
+                <label for="">Sua Senha:<br>
+                    <input type="password" name="senha" data-rules="required">
+                </label>
+                <label for=""><input type="submit" value="Cadastrar"></label>
+            </form>
+
+            <div>
+                Ja tem uma conta? <a href="">Faça o seu login</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
