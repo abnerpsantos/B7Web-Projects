@@ -101,9 +101,7 @@ function confirma() {
     let etapa = etapas[etapaAtual];
     let votoConfirmado = false;
 
-    if (votoBranco === true) {
-        votoConfirmado = true;
-    } else if (numero.length === etapa.numeros) {
+    if (votoBranco === true || numero.length === etapa.numeros) {
         votoConfirmado = true;
     }
 
@@ -112,14 +110,14 @@ function confirma() {
         if (etapas[etapaAtual] !== undefined) {
             comecarEtapa();
         } else {
-            AudioFunciton();
+            AudioFunction();
             document.querySelector('.tela').innerHTML = '<div class="aviso_grande pisca">FIM</div>';
         }
     }
 
 }
 
-function AudioFunciton() {
+function AudioFunction() {
 let audio = document.querySelector('#confirma_audio');
 audio.currentTime = 1.2;
 audio.play();
